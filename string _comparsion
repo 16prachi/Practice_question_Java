@@ -1,0 +1,32 @@
+class Solution{
+     static String sort(String str)
+     {
+         char []arr=str.toCharArray();
+         Arrays.sort(arr);
+         return String.valueOf(arr);
+     }
+    
+    public boolean solve(int N, String S1, String S2, String S3){
+     String p1=sort(S1);
+     String p2=sort(S2);
+     String p3=sort(S3);
+     
+     
+            
+              if(p1.equals(p2))
+              {
+                  return true;
+              }
+              else if(p1.equals(p3))
+              {
+                  return true;
+              }
+              else if(p2.equals(p3))
+              {
+                  return true;
+              }
+         
+         return false;
+     
+}
+}
